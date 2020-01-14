@@ -14,23 +14,25 @@
 
         <div class="row section">
                 <div class=" col s6  push-s3">
-                        <div class="form">
+
+                        <form name="cadastroUsuario" action="exemplo.html" method="POST" onsubmit="return validar()">
+
                                 <div class="input-field col s6">
                                         <input id="nome" type="text" class="validate">
                                         <label for="nome"> Nome</label>
                                 </div>
                                 <div class="input-field col s6">
                                         <input id="sobrenome" type="text" class="validate">
-                                        <label for="sobrenome">Sobrename</label>
+                                        <label for="sobrenome">Sobrenome</label>
                                 </div>
 
                                 <div class="input-field col s12">
-                                        <input type="text" placeholder="Ex.: (00) 0000-0000" class="validate">
+                                        <input  id="telefone" type="text" placeholder="Ex.: (00) 0000-0000" class="validate">
                                         <label for="telefone">Telefone</label>
                                 </div>
 
                                 <div class="input-field col s12">
-                                        <input type="text" placeholder="Ex.: 000.000.000-00" class="validate">
+                                        <input id="cpf" type="text" placeholder="Ex.: 000.000.000-00" class="validate">
                                         <label for="cpf">CPF</label>
                                 </div>
 
@@ -53,15 +55,15 @@
                                         <button class="btn waves-effect waves-light deep-orange" href="" type="submit"
                                                 name="action">Cadastrar</button>
                                 </div>
-                        </div>
-
-
+                        </form>
                 </div>
 
 
+        </div>
 
-        </div>
-        </div>
+
+
+
 
 
 
