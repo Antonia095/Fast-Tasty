@@ -60,11 +60,37 @@
 
 
         </div>
+
+
         
         
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="materialize/js/materialize.js"></script>
         <script src="materialize/js/cadastro.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+    authDomain: "fast-tasty.firebaseapp.com",
+    databaseURL: "https://fast-tasty.firebaseio.com",
+    projectId: "fast-tasty",
+    storageBucket: "fast-tasty.appspot.com",
+    messagingSenderId: "893783669375",
+    appId: "1:893783669375:web:013a96aac9824578751d4a",
+    measurementId: "G-5E4WQ7WR0M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 
 </html>
