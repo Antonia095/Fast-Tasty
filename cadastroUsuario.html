@@ -15,7 +15,7 @@
         <div class="row section">
                 <div class=" col s6  push-s3">
 
-                        <form id="cadastro" >
+                        <form >
 
                                 <div class="input-field col s6">
                                         <input id="nome" type="text" class="validate">
@@ -50,32 +50,34 @@
                                         <input id="senha" type="password" class="validate">
                                         <label for="senha">Senha</label>
                                 </div>
+                        </form>
 
                                 <div class="botao">
-                                        <button class="btn waves-effect waves-light deep-orange"  type="submit"
-                                                name="action">Cadastrar</button>
+                                        <button class="btn waves-effect waves-light deep-orange" type="submit" id="criarUsuario"  >Cadastrar</button>
                                 </div>
-                        </form>
+                       
                 </div>
 
 
         </div>
 
 
-        
+
+
+
+ <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+
+
         
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="materialize/js/materialize.js"></script>
         <script src="materialize/js/cadastro.js"></script>
-
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
-
 <script>
+   
+
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
@@ -90,7 +92,12 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+  
+
+  
+  
 </script>
+
 </body>
 
 </html>
