@@ -1,29 +1,39 @@
+document.getElementById('cadastro').addEventListener('submit',cadastraUsuario);
 
-var criarUsuario = document.getElementById('criarUsuario');
-var email = document.getElementById('email');
-var senha = document.getElementById('senha');
+function cadastraUsuario(e){
+    var nome = document.getElementById('nome').value;
+    var sobrenome = document.getElementById('sobrenome').value;
+    var telefone = document.getElementById('telefone').value;
+    var cpf = document.getElementById('cpf').value;
+    var email = document.getElementById('email').value;
+    var endereco = document.getElementById('endereco').value;
+    var senha = document.getElementById('senha').value;
 
-criarUsuario.addEventListener('click', function(){
+    if(!nome || !sobrenome || !telefone || !cpf || !email || !endereco || !senha){
+        alert('por favor, preencha os campos em branco');
+    }
 
-    firebase
-    .auth()
-    .createUserWithEmailAndPassword(email.value,senha.value)
-    .then(function(){
-        alert("bem vindo");
-    })
-    .catch(function(error){
-        console.error(error.code);
-        console.error(error.message);
-        alert('falha ao cadastrar');
-    });
+    usuario01 = {
+        nomeUser : nome,
+        sobrenomeUser : sobrenome,
+        telefoneUser : telefone,
+        cpfUser : cpf,
+        emailUser : email,
+        enderecoUser : endereco,
+        senhaUser : senha
+    }
+    console.log(usuario01);
 
-});
-
-
- 
-
-
-
-
-
-    
+    if(localStorage.getItem('usuario') === null){
+        var cliente = [];
+        cliente.push(usuario01);
+        localStorage.setItem('usuario', JSON.stringify(cliente));
+    }
+    else{
+        var cliente = JSON.parse(localStorage.getItem('usuario'));
+        cliente.push(usuario01);
+        localStorage.setItem('usuario',JSON.stringify(cliente));
+    }
+   
+    e.preventDefault();
+}
