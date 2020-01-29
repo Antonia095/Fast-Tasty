@@ -1,16 +1,18 @@
-function validar( ){
-    var email = login.email.value;
-    var senha = login.senha.value;
+var entrar = document.getElementById('entrar');
+var email = document.getElementById('email');
+var senha = document.getElementById('senha');
 
-    if(email == ""){
-        alert("por favor, preencha o campo email");
-        login.email.focus();
-        return false;
-    }
-    if(senha == "" || senha.length <= 5){
-        alert("por favor, preencha o campo senha, com no minimo 6 caracteres");
-        login.senha.focus();
-        return false;
-}
-
-}
+entrar.addEventListener('click',function(){
+    firebase
+        .auth()
+        .signInWithEmailAndPassword(email.value,senha.value)
+        .then(function(result){
+            console.log(result);
+            alert("autentificado");
+        })
+        .catch(function(error){
+            console.log(error.code);
+            console.log(error.mensage);
+            alert("falha ao fazer login, verifique seu email.");
+        });
+});

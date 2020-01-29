@@ -1,5 +1,4 @@
 
-
 var criarUsuario = document.getElementById('criarUsuario');
 var email = document.getElementById('email');
 var senha = document.getElementById('senha');
