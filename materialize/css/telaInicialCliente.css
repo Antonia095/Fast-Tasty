@@ -1,0 +1,67 @@
+#Div2{
+    position:relative;
+    border-width:2px;
+    width: 150px;
+    height: 120px;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+#Div1{
+    position: relative;
+    border-width:2px;
+    width: 150px;
+    height: 120px;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+#Div4{
+    position:relative;
+    border-width:2px;
+    width: 150px;
+    height: 120px;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+#Div3{
+    position: relative;
+    border-width:2px;
+    width: 150px;
+    height: 120px;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.externa {
+align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+#interna {
+width: 200px;
+}
+
+
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+/*#par {
+    color: #efefef;
+}
