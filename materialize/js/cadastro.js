@@ -10,6 +10,8 @@ criarUsuario.addEventListener('click', function(){
     .createUserWithEmailAndPassword(email.value,senha.value)
     .then(function(){
         alert("bem vindo");
+        
+
     })
     .catch(function(error){
         console.error(error.code);

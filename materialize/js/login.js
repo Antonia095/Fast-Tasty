@@ -8,7 +8,8 @@ entrar.addEventListener('click',function(){
         .signInWithEmailAndPassword(email.value,senha.value)
         .then(function(result){
             console.log(result);
-            alert("autentificado");
+            window.location = 'file:///home/kelcilene/Fast-Tasty/telaInicialCliente.html';
+            
                 
         })
         .catch(function(error){
