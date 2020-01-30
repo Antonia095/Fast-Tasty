@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Carrinho-Fast&Tasty</title>
+        <link rel="stylesheet" href="materialize/css/materialize.css">
+        <link rel="stylesheet" href="materialize/css/estilo.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body class="grey lighten-3">
+        <!--Cabeçalho-->
+
+                <div class="navbar-fixed">
+                    <!--Menu-->
+                    <nav>
+                        <div class="nav-wrapper deep-orange">
+                            <a href="#" class="brand-logo center"><img id="imagemLogo" src="img/logo.png"></a>
+
+                            <!--Icone de menu mobile-->
+                            <a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+                                <i class="material-icons">menu</i>
+                            </a>
+
+                            <ul id="navbar-itens" class="right hide-on-med-and-down">
+                                <li>
+                                   <!-- <i style="position:abosute;" class="material-icons prefix">account_circle</i>-->
+                                    <a href="#" id="icon_prefix" class="validate">Perfil</a>
+                                </li>
+                                <li><a href="#">Favoritos</a></li>
+                                <li><a href="#">Localização</a></li>
+                            </ul>
+                        </div>
+
+                    </nav>
+
+                </div>
+
+                <!--Menu mobille-->
+                <ul id="mobile-navbar" class="sidenav">
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Localização</a></li>
+                </ul>
+
+
+        <!--Conteúdo-->
+        <main>
+            <h4 class="center">Meus Pedidos</h4>
+            <div class="row">
+                <div class=" col s8 push-s2">
+                    <ul>
+                        <li class="card-panel">
+                            
+                                <img id="fotoDoPedido" src="#">
+                                
+                        </li>
+                        
+                    </ul>
+                     <div>
+                        
+                         <input id="campoValor" class="right">
+                         <p class="right valor"><b>Valor Total&nbsp;&nbsp;</b></p>
+                     </div>
+                     
+                </div>
+                
+                <div class="col s8 push-s2">
+                    <h6><b>Forma de pagamento</b></h6>
+                    <p>
+                        <label>
+                          <input  class="with-gap" type="radio"/>
+                          <span style="color: black
+                          ;">Cartão</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input  class="with-gap" type="radio"/>
+                          <span style="color: black
+                          ;">Dinheiro</span>
+                        </label>
+                      </p>
+                </div>
+                
+                <div class="col s8 push-s2">
+                    <button data-target="finalizarCompra" class="btn modal-trigger right">Finalizar compra</button>
+                    <div class="modal" id="finalizarCompra">
+                        <div class="modal-content">
+                            <h4>Teste</h4>
+                             <p>dhskjghsdjkgsdkgskfgskfgks</p>   
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn modal-close modal-action">Sair</a>
+                        </div>
+                    </div>
+
+                    <a style="color:#fc4a1a" data-target="adicionarEndereco" class="waves-effect modal-trigger left">Adicionar endereço</a>
+                    <div class="modal center" id="adicionarEndereco">
+                        <div class="modal-content">
+                            <h5 class="center" style="color:#fc4a1a"><b>Adicionar um endereço</b></h5>
+                            
+                            <input id="campoBairro" class="center">
+                            <h6 class="left">Bairro</h6> 
+                            <br><br><br>
+                            <input id="campoRua" class="center">
+                            <h6 class="left">Rua&nbsp;&nbsp;</h6> 
+                            <br><br><br>
+                            <input id="campoNumero" class="">
+                            <h6 class="left">Número</h6>   
+                        </div>
+                        <div class="modal-footer">
+                            <a id="botaoSalvar" class="btn modal-close modal-action">Salvar</a>
+                        </div>
+                    </div>
+                </div>    
+              
+                     
+            </div>
+            
+    </main>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+        <script src="materialize/js/carrinho.js"></script>
+    </body>
+
+</html>
