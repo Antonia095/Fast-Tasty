@@ -1,44 +1,13 @@
-#Div2{
+#botaoCafe, #botaoAlmoco, #botaoLanche, #botaoJantar{
     position:relative;
     border-width:2px;
     width: 150px;
     height: 120px;
-    background-color: white;
+    background-color: #eeeeee;
     float: left;
     padding: 10px;
     margin: 10px;
 }
-#Div1{
-    position: relative;
-    border-width:2px;
-    width: 150px;
-    height: 120px;
-    background-color: white;
-    float: left;
-    padding: 10px;
-    margin: 10px;
-}
-#Div4{
-    position:relative;
-    border-width:2px;
-    width: 150px;
-    height: 120px;
-    background-color: white;
-    float: left;
-    padding: 10px;
-    margin: 10px;
-}
-#Div3{
-    position: relative;
-    border-width:2px;
-    width: 150px;
-    height: 120px;
-    background-color: white;
-    float: left;
-    padding: 10px;
-    margin: 10px;
-}
-
 
 .externa {
 align-items: center;
@@ -51,6 +20,9 @@ justify-content: center;
 width: 200px;
 }
 
+#par{
+    color:#fc4a1a ;
+}
 
  body {
     display: flex;
@@ -61,6 +33,10 @@ width: 200px;
   main {
     flex: 1 0 auto;
   }
+  #imagemLogo{
+    height: 63px;
+    width: 15%;
+}
 
 /*#par {
     color: #efefef;

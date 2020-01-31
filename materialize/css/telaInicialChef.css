@@ -1,0 +1,43 @@
+#imagemLogo{
+    height: 63px;
+    width: 15%;
+}
+#campoNomePrato, #campoDescricao{
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 50%;
+    position: relative;
+    right: 10px ;
+}
+#campoValor{
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 10%;
+    position: relative;
+    right: 150px;
+}
+h6{
+    color:black;
+}
+#botaoCadastrar{
+    position: relative;
+    right: 15px ;
+    top: -15px;
+}
+.btn{
+    background: #fc4a1a;
+}
+
+#campoImagem{
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 5px;
+    height: 90px;
+    width: 10%;
+    position: relative;
+    right: 200px 
+}

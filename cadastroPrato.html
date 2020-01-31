@@ -85,9 +85,17 @@
                 </div>
                 
                 <div class="col s8 push-s2">
-                    <a  onclick="M.toast({html: 'Compra realizada!'})" class="btn right">Finalizar compra</a>
-                   
-                    <!--Modal para adicionar um endereço-->
+                    <button data-target="finalizarCompra" class="btn modal-trigger right">Finalizar compra</button>
+                    <div class="modal" id="finalizarCompra">
+                        <div class="modal-content">
+                            <h4>Teste</h4>
+                             <p>dhskjghsdjkgsdkgskfgskfgks</p>   
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn modal-close modal-action">Sair</a>
+                        </div>
+                    </div>
+
                     <a style="color:#fc4a1a" data-target="adicionarEndereco" class="waves-effect modal-trigger left">Adicionar endereço</a>
                     <div class="modal center" id="adicionarEndereco">
                         <div class="modal-content">

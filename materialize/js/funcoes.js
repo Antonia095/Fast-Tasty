@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+
+     
+  });
+
+  //Inicia menu mobile
+  const elemsSidenav = document.querySelectorAll(".sidenav");
+  const instancesSidenav = M.Sidenav.init(elemsSidenav);
+
+  //Função de avaliação
 function Avaliar(estrela) {
  var url = window.location;
  url = url.toString()
@@ -99,3 +111,5 @@ avaliacao = 1;
 //document.getElementById('rating').innerHTML = avaliacao;
 
 }
+
+

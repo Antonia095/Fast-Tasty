@@ -1,128 +1,151 @@
 <!DOCTYPE html>
 <html>
 
+     <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Página Inicial Cliente</title>
+            <link rel="stylesheet" href="materialize/css/materialize.css">
+            <link rel="stylesheet" href="materialize/css/telaInicialCliente.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          
+    </head>
 
-<head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial Cliente</title>
-    <link rel="stylesheet" href="materialize/css/materialize.css">
-    <link rel="stylesheet" href="materialize/css/telaInicialCliente.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <script src="funcoes.js"></script>
-</head>
 
+    <body class="grey lighten-3">
+     
+           <!--Cabeçalho-->
 
-<body>
-  <div class="navbar-fixed">
-	<nav>
-    <div class="deep-orange nav-wrapper">
-      <form>
-        <div class="input-field">
-          <a href="#" class="brand-logo center"> Fast & Tasty </a>
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons white-text">search</i></label>
-          <i class="material-icons">close</i>
+           <div class="navbar-fixed">
+            <!--Menu-->
+            <nav>
+                <div class="nav-wrapper deep-orange">
+                    <a href="#" class="brand-logo center"><img id="imagemLogo" src="img/logo.png"></a>
+
+                    <!--Icone de menu mobile-->
+                    <a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+
+                    <ul id="navbar-itens" class="right hide-on-med-and-down">
+                        <li>
+                           <!-- <i style="position:abosute;" class="material-icons prefix">account_circle</i>-->
+                            <a href="#" id="icon_prefix" class="validate">Perfil</a>
+                        </li>
+                        <li><a href="#">Favoritos</a></li>
+                        <li><a href="#">Localização</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
         </div>
-      </form>
-    </div>
-  </nav>
-</div>
 
+        <!--Menu mobille-->
+        <ul id="mobile-navbar" class="sidenav">
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Localização</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
 
-  <div class="externa">
-    <div id="Div1"><i class="material-icons medium circle deep-orange-text">free_breakfast</i><p id="par">Café Da Manhã</p></div>
-    <div id="Div2"><i class="material-icons medium circle deep-orange-text">local_dining</i><p id="par">Almoço</p></div>
-    <div id="Div3"><i class="material-icons medium circle deep-orange-text">fastfood</i><p id="par">Lanche</p></div>
-    <div id="Div4"><i class="material-icons medium circle deep-orange-text">restaurant</i><p id="par">Jantar</p></div>
-  </div>
-
-
-<ul class="collection">
-    <li class="collection-item avatar">
-      <img src="img/temperodecasa.png" alt="" class="circle">
-      <span class="title"><b>Tempero De Casa</b></span>
-      <p>Almoço</p>
-      <div class="secondary-content"><a href="#!">
-        <a href="javascript:void(0)" onclick="Avaliar(1)">
-        <img class="responsive-img" src="img/star1.png" id="s1"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(2)">
-        <img class="responsive-img" src="img/star1.png" id="s2"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(3)">
-        <img class="responsive-img" src="img/star1.png" id="s3"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(4)">
-        <img class="responsive-img" src="img/star0.png" id="s4"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(5)">
-        <img class="responsive-img" src="img/star0.png" id="s5"></a>
-      </div>
-    </li>
-    <li class="collection-item avatar">
-      <img src="img/cafe&cia.jpg" alt="" class="circle">
-      <span class="title"><b>Café & Cia</b></span>
-      <p>Lanches</p>
-      <div class="secondary-content"><a href="#!">
-        <a href="javascript:void(0)" onclick="Avaliar(1)">
-        <img src="img/star1.png" id="s1"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(2)">
-        <img src="img/star1.png" id="s2"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(3)">
-        <img src="img/star1.png" id="s3"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(4)">
-        <img src="img/star0.png" id="s4"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(5)">
-        <img src="img/star0.png" id="s5"></a>
-      </div>
-    </li>
-    <li class="collection-item avatar">
-      <img src="img/salgadosimperial.png" alt="" class="circle">
-      <span class="title"><b>Salgados Imperial</b></span>
-      <p>Lanches</p>
-      <div class="secondary-content"><a href="#!">
-        <a href="javascript:void(0)" onclick="Avaliar(1)">
-        <img src="img/star1.png" id="s1"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(2)">
-        <img src="img/star1.png" id="s2"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(3)">
-        <img src="img/star1.png" id="s3"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(4)">
-        <img src="img/star1.png" id="s4"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(5)">
-        <img src="img/star0.png" id="s5"></a>
-      </div>
-    </li>
-    <li class="collection-item avatar">
-      <img src="img/saborcaseiro.jpg" alt="" class="circle">
-      <span class="title"><b>Sabor Caseiro</b></span>
-      <p>Almoço/Jantar</p>
-      <div class="secondary-content"><a href="#!">
-        <a href="javascript:void(0)" onclick="Avaliar(1)">
-        <img src="img/star1.png" id="s1"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(2)">
-        <img src="img/star1.png" id="s2"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(3)">
-        <img src="img/star0.png" id="s3"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(4)">
-        <img src="img/star0.png" id="s4"></a>
-        <a href="javascript:void(0)" onclick="Avaliar(5)">
-        <img src="img/star0.png" id="s5"></a>
-      </div>
-    </li>
-</ul>
-
-<main>
-<footer class="footer-fixed page-footer deep-orange">
-      <div class="footer-copyright">
-            <div class="container">
-            <div class="row">
-            <div class="col s3"><i class="material-icons white-text">favorite</i><p>Favoritos</p></div>
-            <div class="col s3"><i class="material-icons white-text">room</i><p>Localização</p></div>
-            <div class="col s3"><i class="material-icons white-text">shopping_cart</i><p>Carrinho</p></div>
-            <div class="col s3"><i class="material-icons white-text">account_circle</i><p>Perfil</p></div>
+          <!--Opções de cardápio-->
+            <div class="externa">
+              <div id="botaoCafe"><i class="material-icons medium circle deep-orange-text"> free_breakfast</i><p id="par">Café Da Manhã</p></div>
+              <div id="botaoAlmoco"><i class="material-icons medium circle deep-orange-text">local_dining</i><p id="par">Almoço</p></div>
+              <div id="botaoLanche"><i class="material-icons medium circle deep-orange-text">fastfood</i><p id="par">Lanche</p></div>
+              <div id="botaoJantar"><i class="material-icons medium circle deep-orange-text">restaurant</i><p id="par">Jantar</p></div>
             </div>
-            </div>
-          </div>
-</footer>
-</main>
 
-</body>
+
+          <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="img/temperodecasa.png" alt="" class="circle">
+                <span class="title"><b>Tempero De Casa</b></span>
+                <p>Almoço</p>
+                <div class="secondary-content"><a href="#!">
+                  <a href="javascript:void(0)" onclick="Avaliar(1)">
+                  <img class="responsive-img" src="img/star1.png" id="s1"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(2)">
+                  <img class="responsive-img" src="img/star1.png" id="s2"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(3)">
+                  <img class="responsive-img" src="img/star1.png" id="s3"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(4)">
+                  <img class="responsive-img" src="img/star0.png" id="s4"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(5)">
+                  <img class="responsive-img" src="img/star0.png" id="s5"></a>
+                </div>
+              </li>
+              <li class="collection-item avatar">
+                <img src="img/cafe&cia.jpg" alt="" class="circle">
+                <span class="title"><b>Café & Cia</b></span>
+                <p>Lanches</p>
+                <div class="secondary-content"><a href="#!">
+                  <a href="javascript:void(0)" onclick="Avaliar(1)">
+                  <img src="img/star1.png" id="s1"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(2)">
+                  <img src="img/star1.png" id="s2"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(3)">
+                  <img src="img/star1.png" id="s3"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(4)">
+                  <img src="img/star0.png" id="s4"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(5)">
+                  <img src="img/star0.png" id="s5"></a>
+                </div>
+              </li>
+              <li class="collection-item avatar">
+                <img src="img/salgadosimperial.png" alt="" class="circle">
+                <span class="title"><b>Salgados Imperial</b></span>
+                <p>Lanches</p>
+                <div class="secondary-content"><a href="#!">
+                  <a href="javascript:void(0)" onclick="Avaliar(1)">
+                  <img src="img/star1.png" id="s1"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(2)">
+                  <img src="img/star1.png" id="s2"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(3)">
+                  <img src="img/star1.png" id="s3"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(4)">
+                  <img src="img/star1.png" id="s4"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(5)">
+                  <img src="img/star0.png" id="s5"></a>
+                </div>
+              </li>
+              <li class="collection-item avatar">
+                <img src="img/saborcaseiro.jpg" alt="" class="circle">
+                <span class="title"><b>Sabor Caseiro</b></span>
+                <p>Almoço/Jantar</p>
+                <div class="secondary-content"><a href="#!">
+                  <a href="javascript:void(0)" onclick="Avaliar(1)">
+                  <img src="img/star1.png" id="s1"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(2)">
+                  <img src="img/star1.png" id="s2"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(3)">
+                  <img src="img/star0.png" id="s3"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(4)">
+                  <img src="img/star0.png" id="s4"></a>
+                  <a href="javascript:void(0)" onclick="Avaliar(5)">
+                  <img src="img/star0.png" id="s5"></a>
+                </div>
+              </li>
+          </ul>
+<!--
+          <main>
+          <footer class="footer-fixed page-footer deep-orange">
+                <div class="footer-copyright">
+                      <div class="container">
+                      <div class="row">
+                      <div class="col s3"><i class="material-icons white-text">favorite</i><p>Favoritos</p></div>
+                      <div class="col s3"><i class="material-icons white-text">room</i><p>Localização</p></div>
+                      <div class="col s3"><i class="material-icons white-text">shopping_cart</i><p>Carrinho</p></div>
+                      <div class="col s3"><i class="material-icons white-text">account_circle</i><p>Perfil</p></div>
+                      </div>
+                      </div>
+                    </div>
+          </footer>
+          </main>
+-->     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+        <script src="materialize/js/funcoes.js"></script>
+    </body>
 </html>
