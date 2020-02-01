@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>CadastroUsuario-Fast&Tasty</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="../materialize/css/logo.css">
+
+<body>
+        <nav class="deep-orange">
+                <div class="nav-wrapper"></div>
+        </nav>
+
+        <div class="row section">
+                <div class=" col s6  push-s3">
+
+                        <form >
+
+                                <div class="input-field col s6">
+                                        <input id="nome" type="text" class="validate">
+                                        <label for="nome"> Nome</label>
+                                </div>
+                                <div class="input-field col s6">
+                                        <input id="sobrenome" type="text" class="validate">
+                                        <label for="sobrenome">Sobrenome</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input  id="telefone" type="text" placeholder="Ex.: (00) 0000-0000" class="validate">
+                                        <label for="telefone">Telefone</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="cpf" type="text" placeholder="Ex.: 000.000.000-00" class="validate">
+                                        <label for="cpf">CPF</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="endereco" type="text" class="validate">
+                                        <label for="endereco">Endereço</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="senha" type="password" class="validate">
+                                        <label for="senha">Senha</label>
+                                </div>
+                        </form>
+
+                                <div class="botao">
+                                        <button class="btn waves-effect waves-light deep-orange" type="submit" id="criarUsuario"  >Cadastrar</button>
+                                </div>
+                       
+                </div>
+
+
+        </div>
+
+
+
+
+
+ <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+
+
+        
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../materialize/js/cadastro.js"></script>
+<script>
+   
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+    authDomain: "fast-tasty.firebaseapp.com",
+    databaseURL: "https://fast-tasty.firebaseio.com",
+    projectId: "fast-tasty",
+    storageBucket: "fast-tasty.appspot.com",
+    messagingSenderId: "893783669375",
+    appId: "1:893783669375:web:013a96aac9824578751d4a",
+    measurementId: "G-5E4WQ7WR0M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+
+  
+  
+</script>
+
+</body>
+
+</html>

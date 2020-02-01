@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login-Fast&Tasty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../materialize/css/logo.css">
+
+<body>
+
+    <div class="row">
+        <div class=" col s5  push-s4 ">
+            
+            <div class="container ">
+                <img src="../img/img.png" width="200" height="150">
+            </div>
+
+            <form name="login" action="exemplo.html" method="POST">
+                
+            <div class="row">
+                <div class="input-field col s12 ">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12 ">
+                    <input id="senha" type="password" class="validate">
+                    <label for="password">Senha</label>
+                </div>
+            </div>
+        </form>
+
+            <div class="botao">
+                <button class="btn waves-effect waves-light deep-orange" type="submit" id="entrar" >Entrar</button>
+
+                <a href="../view/cadastro.html"  class=" btn waves-effect waves-light deep-orange ">Cadastrar</a>
+                
+            </div>
+        
+        </div>
+
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../materialize/js/login.js"></script>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+    authDomain: "fast-tasty.firebaseapp.com",
+    databaseURL: "https://fast-tasty.firebaseio.com",
+    projectId: "fast-tasty",
+    storageBucket: "fast-tasty.appspot.com",
+    messagingSenderId: "893783669375",
+    appId: "1:893783669375:web:013a96aac9824578751d4a",
+    measurementId: "G-5E4WQ7WR0M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+
+</html>
