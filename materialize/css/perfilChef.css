@@ -1,0 +1,26 @@
+#imagemLogo{
+    height: 63px;
+    width: 15%;
+}
+
+h5{
+    position: relative;
+}
+#campoNumeroCartao, #campoNomeTitular{
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 50%;
+    position: relative;
+    right: 10px ;
+}
+#campoCodigo{
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 5px;
+    height: 35px;
+    width: 10%;
+    position: relative;
+    right: 150px;
+}

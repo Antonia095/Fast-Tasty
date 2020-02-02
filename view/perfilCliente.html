@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>Perfil do Cliente-Fast&Tasty</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="../materialize/css/perfilChef.css">
+        <link rel="stylesheet" href="../materialize/css/logo.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+        <body class="grey lighten-3">
+
+            <!--Cabeçalho-->
+    
+            <div class="navbar-fixed">
+                <!--Menu-->
+                <nav>
+                    <div class="nav-wrapper deep-orange">
+                        <a href="#" class="brand-logo center"><img id="imagemLogo" src="../img/logo.png"></a>
+    
+                        <!--Icone de menu mobile-->
+                        <a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+    
+                        <ul id="navbar-itens" class="right hide-on-med-and-down">
+                            
+                            <li><a href="telaInicialCliente.html" >Inicio</a></li>
+                            <li><a href="carrinho.html">Carrinho</a></li>
+                            <li><a href="#">Favoritos</a></li>
+                            <li><a href="#">Localização</a></li>
+                                
+                         </ul>
+                    </div>
+    
+                </nav>
+    
+            </div>
+    
+            <!--Menu mobille-->
+            <ul id="mobile-navbar" class="sidenav">
+                <li><a href="telaInicialCliente.html" >Inicio</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="#">Favoritos</a></li>
+                <li><a href="#">Localização</a></li>
+           
+                
+            </ul>
+        <div  class="row section">
+                <div  class=" col s6  push-s3 ">
+                    <h5 class="container">Atualizar Dados</h5>
+                        <form >
+
+                                <div class="input-field col s6">
+                                        <input id="nome" type="text" class="validate">
+                                        <label for="nome"> Nome</label>
+                                </div>
+                                <div class="input-field col s6">
+                                        
+                                        <input id="sobrenome" type="text" class="validate">
+                                        <label for="sobrenome">Sobrenome</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="telefone" type="text" placeholder="Ex.: (00) 0000-0000"
+                                                class="validate">
+                                        <label for="telefone">Telefone</label>
+                                        <i class=" material-icons prefix">mode_edit</i>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="cpf" type="text" placeholder="Ex.: 000.000.000-00" class="validate">
+                                        <label for="cpf">CPF</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                        <i class="material-icons prefix">mode_edit</i>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="endereco" type="text" class="validate">
+                                        <label for="endereco">Endereço</label>
+                                        <i class="material-icons prefix">mode_edit</i>
+                                </div>
+
+                                <div class="input-field col s12">
+                                        <input id="senha" type="password" class="validate">
+                                        <label for="senha">Senha</label>
+                                        <i class="material-icons prefix">mode_edit</i>
+                                </div>
+
+
+                                <div class="input-field file-field col s12">
+                                        <div class="btn">
+                                                <span>Foto</span>
+                                                <input type="file">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text"
+                                                        placeholder="Adicione uma foto ao seu perfil">
+                                                        <i class="material-icons prefix">mode_edit</i>        
+                                        </div>
+                                </div>
+
+                                <div class="botao right">
+                            
+                                        <button class="btn waves-effect waves-light deep-orange" type="submit"
+                                                name="action">Atualizar</button>
+
+                                        <button data-target="cozinheiroPremium" class="btn waves-effect waves-light deep-orange modal-trigger" type="submit"
+                                                name="action">Torna-se Premium</button>  
+                                         <!--Campo de premium-->       
+                                        <div class="modal center" id="cozinheiroPremium">
+                                            <div class="modal-content">
+                                                <h6 class="center" style="color: #fc4a1a;"><b>Torne-se cliente premium
+                                                    e obtenha duas refeições por apenas R$15,00
+                                                </b></h6>
+
+                                                <p>
+                                                    <label>
+                                                        
+                                                        <input type="checkbox"/>
+                                                        <span>Plano mensal de R$15,00</span>
+                                                    </label>
+                                                </p>
+                                                <br>
+                                                <h6><b>Cadastrar Cartão</b></h6><br><br>
+                                                <input id="campoNumeroCartao" class="">
+                                                <h6 class="left">Número do cartão</h6> 
+                                                <br>
+                                                <input id="campoNomeTitular" class="">
+                                                <h6 class="left">Nome do Titular</h6> 
+                                                <br>
+                                                <input id="campoCodigo" class="">
+                                                <h6 class="left">Código</h6> 
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a id="botaoCadastrar" class="btn modal-close modal-action">Cadastrar</a>
+                                            </div>
+                                        </div>        
+                                </div>
+
+                        </form>
+                        
+
+
+                </div>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="../materialize/js/telaChef.js"></script>
+
+</body>
+
+</html>
