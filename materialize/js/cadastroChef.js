@@ -1,18 +1,16 @@
-
-var criarUsuario = document.getElementById('criarUsuario');
+var criarChef = document.getElementById('criarChef');
 var email = document.getElementById('email');
 var senha = document.getElementById('senha');
 
-criarUsuario.addEventListener('click', function(){
+criarChef.addEventListener('click', function(){
 
     firebase
     .auth()
     .createUserWithEmailAndPassword(email.value,senha.value)
     .then(function(){
         alert("bem vindo");
-        window.location = '../view/telaInicialCliente.html';
+        window.location = '../view/telaInicialChef.html';
         
-
     })
     .catch(function(error){
         console.error(error.code);
