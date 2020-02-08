@@ -85,7 +85,7 @@
                 </div>
                 
                 <div class="col s8 push-s2">
-                    <a  onclick="M.toast({html: 'Compra realizada!'})" class="btn right">Finalizar compra</a>
+                    <button onclick="M.toast({html: 'Compra realizada!'})" class="btn right" onclick="criarCard()">Finalizar compra</button>
                    
                     <!--Modal para adicionar um endereço-->
                     <a style="color:#fc4a1a" data-target="adicionarEndereco" class="waves-effect modal-trigger left">Adicionar endereço</a>
@@ -114,7 +114,31 @@
     </main>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="../materialize/js/carrinho.js"></script>
+    <script src="../materialize/js/carrinho.js"></script>
+    <script src="../materialize/js/telaInicial.js"></script>
+
+        <!--firebase-->
+
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+    authDomain: "fast-tasty.firebaseapp.com",
+    databaseURL: "https://fast-tasty.firebaseio.com",
+    projectId: "fast-tasty",
+    storageBucket: "fast-tasty.appspot.com",
+    messagingSenderId: "893783669375",
+    appId: "1:893783669375:web:013a96aac9824578751d4a",
+    measurementId: "G-5E4WQ7WR0M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     </body>
 
 </html>
