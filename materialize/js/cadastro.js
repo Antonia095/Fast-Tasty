@@ -1,13 +1,13 @@
 
 
-var criarUsuario = document.getElementById('criarUsuario');
+var  criarUsuario  =  documento . getElementById ( 'criarUsuario' ) ;
 
-var nome = document.getElementById('nome');
-var email = document.getElementById('email');
-var senha = document.getElementById('senha');
-var sobrenome = document.getElementById('sobrenome');
-var telefone = document.getElementById('telefone');
-var endereco = document.getElementById('endereco');
+var  nome  =  documento.getElementById ('nome');
+var  email  =  documento.getElementById ('email');
+var  senha  =  documento.getElementById ('senha');
+var  sobrenome  =  documento.getElementById ('sobrenome');
+var  telefone  =  documento.getElementById ('telefone');
+var  endereco  =  documento.getElementById ('endereco');
 
 criarUsuario.addEventListener('click', function(){
     createUser(nome.value, sobrenome.value, telefone.value, endereco.value, senha.value, email.value);
