@@ -34,23 +34,50 @@
                             
                                     <div class="modal center" id="cadastrarPratos">
                                     <div class="modal-content">
+                                            
                                         <h5 class="center" style="color:#fc4a1a"><b>Cadastrar Pratos</b></h5>
+                                        <form>
+
+                                            <div class="input-field col s6">
+                                                <input placeholder="Nome do Prato" id="nomePrato" type="text" class="validate">
+                                                <label for="nomePrato">Nome do Prato</label>
+                                              </div>
+
+                                            <div class="input-field col s6">
+                                                    <input placeholder="Descrição do Prato" id="descricao" type="text" class="validate">
+                                                    <label for="descricao">Descrição</label>
+                                                  </div>
+
+                                                  <div class="input-field col s6">
+                                                        <input placeholder="Valor do Prato" id="valor" type="text" class="validate">
+                                                        <label for="valor">Valor</label>
+                                                      </div>
+
+                                                      <div class="input-field file-field col s6">
+                                                            <div class="btn deep-orange">
+                                                                    <span>Foto</span>
+                                                                    <input type="file">
+                                                            </div>
+                                                            <div class="file-path-wrapper">
+                                                                    <input class="file-path validate" type="text"
+                                                                            placeholder="Coloque a foto do seu prato">
+                                                            </div>
+                                                        </div>
+
+                                                        </form>
+
+                                                        <div class="modal-footer container" >
+                                                                <button id="cadastrarPra" class="btn modal-close 
+                                                                modal-action deep-orange " onclick="cadastrarPratos()">Cadastrar
+                                                        </button>
+                                                        </div> 
+                                                    
+                                                </div>
                                         
-                                        <input id="campoNomePrato" class="">
-                                        <h6 class="left">Nome do prato</h6> 
-                                        <br>
-                                        <input id="campoDescricao" class="">
-                                        <h6 class="left">Descrição de prato&nbsp;&nbsp;</h6> 
-                                        <br>
-                                        <input id="campoValor" class="">
-                                        <h6 class="left">Valor</h6>  
-                                        <br>
-                                        <img id="campoImagem" src="#">
-                                        <h6 class="left">Adicionar imagem</h6>    
+
+                                   
                                     </div>
-                                    <div class="modal-footer">
-                                        <a id="botaoCadastrar" class="btn modal-close modal-action">Cadastrar</a>
-                                    </div>
+                                   
                                 </div>
                             
                             </li>
@@ -66,7 +93,7 @@
             <ul id="mobile-navbar" class="sidenav">
                 <li><a href="telaInicalChef.html">Inicio</a></li>
                 <li>
-                    <a data-target="cadastrarPratos" class="waves-effect modal-trigger">Cadastrar Pratos</a>
+                    <a data-target="cadastrarPratos.html" class="waves-effect modal-trigger">Cadastrar Pratos</a>
                 </li>
                 <li><a href="telaComanda.html">Comanda</a></li>
                 
@@ -181,12 +208,40 @@
                 </div>
 
         </div>
-
+        
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+        <script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="../materialize/js/telaChef.js"></script>
+        <script src="../materialize/js/"></script>
+
+        <script>
+   
+
+                // Your web app's Firebase configuration
+                var firebaseConfig = {
+                  apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+                  authDomain: "fast-tasty.firebaseapp.com",
+                  databaseURL: "https://fast-tasty.firebaseio.com",
+                  projectId: "fast-tasty",
+                  storageBucket: "fast-tasty.appspot.com",
+                  messagingSenderId: "893783669375",
+                  appId: "1:893783669375:web:013a96aac9824578751d4a",
+                  measurementId: "G-5E4WQ7WR0M"
+                };
+                // Initialize Firebase
+                firebase.initializeApp(firebaseConfig);
+                firebase.analytics();
+                
+              
+                
+                
+              </script>
 
 </body>
 

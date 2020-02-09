@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CadastroUsuario-Fast&Tasty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../materialize/css/logo.css">
+
+<body>
+
+
+
+    <nav class="deep-orange">
+        <div class="nav-wrapper"></div>
+    </nav>
+
+    <div class="row section">
+        <div class=" col s6  push-s3 ">
+
+            <form>
+                    <div class="progress">
+                            <div class="determinate" id="progress" style="width: 0%"></div>
+                        </div>
+
+                <div class="input-field col s12">
+                    <input placeholder="Nome do Prato" id="nomePrato" type="text" class="validate">
+                    <label for="nomePrato">Nome do Prato</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input placeholder="Descrição do Prato" id="descricao" type="text" class="validate">
+                    <label for="descricao">Descrição</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <input placeholder="Valor do Prato" id="valor" type="text" class="validate">
+                    <label for="valor">Valor</label>
+                </div>
+
+
+  
+
+                <div class="input-field file-field col s12">
+                    <div class="btn deep-orange">
+                        <span>Foto</span>
+                        <input type="file" value="upload" id="fileButton">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Coloque a foto do seu prato">
+                    </div>
+                </div>
+            </form>
+
+            <div class="botao ">
+                <button class="btn waves-effect waves-light deep-orange" type="submit" id="cadastraPra"
+                    onclick="cadastraPratos()">Cadastrar
+            </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
+                <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+
+                <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+
+
+
+                <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script src="../materialize/js/cadastraPratos.js"></script>
+                <script>
+
+
+                    // Your web app's Firebase configuration
+                    var firebaseConfig = {
+                        apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+                        authDomain: "fast-tasty.firebaseapp.com",
+                        databaseURL: "https://fast-tasty.firebaseio.com",
+                        projectId: "fast-tasty",
+                        storageBucket: "fast-tasty.appspot.com",
+                        messagingSenderId: "893783669375",
+                        appId: "1:893783669375:web:013a96aac9824578751d4a",
+                        measurementId: "G-5E4WQ7WR0M"
+                    };
+                    // Initialize Firebase
+                    firebase.initializeApp(firebaseConfig);
+                    firebase.analytics();
+
+
+
+
+                </script>
+
+</body>
+
+</html>
