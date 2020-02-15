@@ -17,17 +17,20 @@
         <div class="row section">
                 <div class=" col s6  push-s3 ">
 
+
+                        
                         <form>
+                                        
 
                                 <div class="input-field col s6">
                                         <input id="nome" type="text" class="validate">
                                         <label for="nome"> Nome</label>
                                 </div>
                                 <div class="input-field col s6">
-                                        <input id="sobrenome" type="text" class="validate">
-                                        <label for="sobrenome">Sobrenome</label>
+                                        <input id="negocio" type="text" class="validate">
+                                        <label for="negocio">Nome do seu negocio</label>
                                 </div>
-
+                                 
                                 <div class="input-field col s12">
                                         <input id="telefone" type="text" placeholder="Ex.: (00) 0000-0000"
                                                 class="validate">
@@ -69,7 +72,7 @@
 
                         <div class="botao">
                                         <button class="btn waves-effect waves-light deep-orange" type="submit"
-                                                id="criarChef" onclick="createChef()">Cadastrar</button>
+                                                id="criarChef">Cadastrar</button>
                         </div>
 
                 </div>
@@ -77,37 +80,34 @@
         </div>
 
 
+        
 
-        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
         <script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
         <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
-
+        <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="../materialize/js/cadastroChef.js"> </script>
 
-        <script>
-   
-
-                        // Your web app's Firebase configuration
-                        var firebaseConfig = {
-                          apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
-                          authDomain: "fast-tasty.firebaseapp.com",
-                          databaseURL: "https://fast-tasty.firebaseio.com",
-                          projectId: "fast-tasty",
-                          storageBucket: "fast-tasty.appspot.com",
-                          messagingSenderId: "893783669375",
-                          appId: "1:893783669375:web:013a96aac9824578751d4a",
-                          measurementId: "G-5E4WQ7WR0M"
-                        };
-                        // Initialize Firebase
-                        firebase.initializeApp(firebaseConfig);
-                        firebase.analytics();
-                        
-                      
-                        
-                        
-                      </script>
+<script>
+        var firebaseConfig = {
+                apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+                authDomain: "fast-tasty.firebaseapp.com",
+                databaseURL: "https://fast-tasty.firebaseio.com",
+                projectId: "fast-tasty",
+                storageBucket: "fast-tasty.appspot.com",
+                messagingSenderId: "893783669375",
+                appId: "1:893783669375:web:013a96aac9824578751d4a",
+                measurementId: "G-5E4WQ7WR0M"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+              firebase.analytics();
+              
+              
+        </script>
+      
 
 </body>
 
