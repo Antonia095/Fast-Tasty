@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Do Cozinheiro/Restaurante (Cliente)</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="../materialize/css/telaInicialCliente.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pratos do dia</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="../materialize/css/telaInicialCliente.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></head>
 
 
-<body>
-	<nav class="responsive">
-    	<div class="deep-orange nav-wrapper">
-      		<form>
-        		<div class="input-field">
-          			<a href="#" class="brand-logo center">Tempeiro De Casa</a>
-          			<ul id="nav-mobile" class="left hide-on-med-and-down">
-        				<li><a href="../view/telaInicialCliente.html"><i class="material-icons white-text">arrow_back</i></a></li>
-      				</ul>
-      				<ul id="nav-mobile" class="right hide-on-med-and-down">
-        				<li><a href="!#"><i class="material-icons white-text">favorite_border</i></a></li>
-      			</div>
-      		</form>
-    	</div>
-  	</nav>
+    <body class="grey lighten-3">
+              <!--Cabeçalho-->
 
-  	<div class="externa">
-    <div id="Div1"></div>
-    <div id="Div2"></div>
-    <div id="Div3"></div>
-    <div id="Div4"></div>
-  </div>
+              <div class="navbar-fixed">
+                    <!--Menu-->
+                    <nav>
+                        <div class="nav-wrapper deep-orange">
+                            <a href="#" class="brand-logo center"><img id="imagemLogo" src="../img/logo.png"></a>
 
-  	<p><b class="white-text">aaa</b><b>Pratos Do Dia</p>
+                            <!--Icone de menu mobile-->
+                            <a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+                                <i class="material-icons">menu</i>
+                            </a>
 
-  	 <ul class="collection">
-    <li class="collection-item avatar">
-     
-      <img src="../img/quentinha.jpg" alt="" class="circle">
-      <span class="title">Quentinha com carne bolvina</span>
-      <!--<p>Bife, arroz, feijão preto, farofa, salada, batata frita</p>
-         R$ 10,00-->
-      <a class="secondary-content waves-effect deep-orange btn-small" href="../view/carrinho.html">Comprar</a>
-    </li>
-    <li class="collection-item avatar">
-      <img src="../img/quentinha.jpg" alt="" class="circle">
-      <span class="title">Quentinha com frango</span>
-      <!--<p>Bife, arroz, feijão preto, farofa, salada, batata frita</p>
-         R$ 10,00-->
-      <a class="secondary-content waves-effect deep-orange btn-small">Comprar</a>
-    </li>
-    <li class="collection-item avatar">
-      <img src="../img/quentinha.jpg" alt="" class="circle">
-      <span class="title">Quentinha com carne suína</span>
-      <!--<p>Bife, arroz, feijão preto, farofa, salada, batata frita</p>
-         R$ 10,00-->
-      <a class="secondary-content waves-effect deep-orange btn-small">Comprar</a>
-    </li>
-  </ul>
+                            <ul id="navbar-itens" class="right hide-on-med-and-down">
+                                
+                                <li><a href="telaInicialCliente.html">Inicio</a></li>
+                                <li><a href="perfilCliente.html" >Perfil</a></li>
+                                <li><a href="carrinho.html">Carrinho</a></li>
+                                
+                            </ul>
+                        </div>
 
-<footer class="footer-fixed page-footer deep-orange">
-      <div class="footer-copyright">
-            <div class="container">
-            	<div class="row">
-            		<div class="col s3"><i class="material-icons white-text">favorite</i><p>Favoritos</p></div>
-            		<div class="col s3"><i class="material-icons white-text">room</i><p>Localização</p></div>
-            		<div class="col s3"><i class="material-icons white-text">shopping_cart</i><p>Carrinho</p></div>
-            		<div class="col s3"><i class="material-icons white-text">account_circle</i><p>Perfil</p></div>
-            	</div>
-            </div>
-          </div>
-</footer>
+                    </nav>
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+              </div>
+
+            <!--Menu mobille-->
+            <ul id="mobile-navbar" class="sidenav">
+                
+                <li><a href="telaInicialCliente.html">Inicio</a></li>
+                <li><a href="perfilCliente.html">Perfil</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                
+             </ul>
+
+             <!--Conteúdo-->
+            <main class="container-fluid"> 
+              <h5 id="campoNomeRestaurante" class="center">Nome do restaurante</h5>
+
+              <h6><b>Pratos do dia</b></h6>
+
+              <div class="card-container">
+
+              </div>
+            </main>  
+          
 
 
-</body>
+          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+           <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+            <script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
+            <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
 
-</html>
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+            authDomain: "fast-tasty.firebaseapp.com",
+            databaseURL: "https://fast-tasty.firebaseio.com",
+            projectId: "fast-tasty",
+            storageBucket: "fast-tasty.appspot.com",
+            messagingSenderId: "893783669375",
+            appId: "1:893783669375:web:013a96aac9824578751d4a",
+            measurementId: "G-5E4WQ7WR0M"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        <!--Controle da tela chef-->
+        <script src="../materialize/js/pratoDia.js"></script>
+
+    </body>

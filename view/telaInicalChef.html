@@ -35,21 +35,22 @@
                                 <div class="modal center" id="cadastrarPratos">
                                 <div class="modal-content">
                                     <h5 class="center" style="color:#fc4a1a"><b>Cadastrar Pratos</b></h5>
-                                    
+                                 <form>   
+                                    <label class="left" style="color: black;">Nome do prato</label> 
                                     <input id="campoNomePrato" class="">
-                                    <h6 class="left">Nome do prato</h6> 
                                     <br>
+                                    <label class="left" style="color: black;">Descrição de prato&nbsp;&nbsp;</label> 
                                     <input id="campoDescricao" class="">
-                                    <h6 class="left">Descrição de prato&nbsp;&nbsp;</h6> 
                                     <br>
+                                    <label class="left" style="color: black;">Valor</label> 
                                     <input id="campoValor" class="">
-                                    <h6 class="left">Valor</h6>  
                                     <br>
-                                    <img id="campoImagem" src="#">
-                                    <h6 class="left">Adicionar imagem</h6>    
+                                    <label class="left" style="color: black;">Adicionar imagem</label> 
+                                    <input id="campoImagem" type="file">
+                                </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <a id="botaoCadastrar" class="btn modal-close modal-action">Cadastrar</a>
+                                    <button onclick="salvarPratos()" class="btn modal-close modal-action">Cadastrar</button>
                                 </div>
                             </div>
                         
@@ -115,30 +116,32 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        <script src="../materialize/js/telaChef.js"></script>
+        
                 <!--firebase-->
 
-<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-<script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
-<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+        <script src = "https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"> </script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
-    authDomain: "fast-tasty.firebaseapp.com",
-    databaseURL: "https://fast-tasty.firebaseio.com",
-    projectId: "fast-tasty",
-    storageBucket: "fast-tasty.appspot.com",
-    messagingSenderId: "893783669375",
-    appId: "1:893783669375:web:013a96aac9824578751d4a",
-    measurementId: "G-5E4WQ7WR0M"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC7ZbkSF8vl0OfnTFHc0-2NaYnYa2DmZiQ",
+            authDomain: "fast-tasty.firebaseapp.com",
+            databaseURL: "https://fast-tasty.firebaseio.com",
+            projectId: "fast-tasty",
+            storageBucket: "fast-tasty.appspot.com",
+            messagingSenderId: "893783669375",
+            appId: "1:893783669375:web:013a96aac9824578751d4a",
+            measurementId: "G-5E4WQ7WR0M"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        
+        <script src="../materialize/js/telaChef.js"></script>
         
     </body>
 
