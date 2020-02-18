@@ -37,7 +37,7 @@ criarChef.addEventListener('click', function(){
     .createUserWithEmailAndPassword(email.value,senha.value)
     .then(() => {
         alert("bem vindo");
-        window.location = '../view/telaInicialChef.html';
+        window.location = '../view/telaInicalChef.html';
         
     })
     .catch((error) =>{

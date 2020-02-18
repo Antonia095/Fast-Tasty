@@ -8,8 +8,7 @@ firebase.database().ref('pratos/' + pratos.nome).push(pratos).then(() =>{
 
   
   document.addEventListener("DOMContentLoaded" ,  function(){
-    ref.once('value').then(snapshot => {
-
+    ref.on('value').then(snapshot => {
       console.log(snapshot.val());
     });
   });
@@ -18,6 +17,7 @@ firebase.database().ref('pratos/' + pratos.nome).push(pratos).then(() =>{
   function adicionarCardTela(pratos){
   let header = document.createElement("h3");
   header.innerText = pratos.nome;
+  //header.innerText = document.getElementById('nome').value;
   header.classList.add('card-title');
   
   let content = document.createElement("p");
